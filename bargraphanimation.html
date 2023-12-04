@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marks of Students</title>
+    <style>
+        body {
+            height: 0%;
+        }
+        #Bar_graph {
+            background-color: rgb(245, 245, 245);
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            text-align: center;
+        }
+        #Bar_graph article {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        p {
+            padding-left: 20px;
+            margin: 0;
+        }
+        div {
+            width: 40px;
+            height: 300px;
+            margin: 20px;
+            background-color: rgb(204, 137, 38);
+            position: relative;
+        }
+        #bar1, #bar2, #bar3 {
+            width: 100%;
+            background-color: rgb(190, 75, 75);
+            position: absolute;
+            bottom: 0;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        #bar1 {
+            height: 50%;
+            animation-name: barplot1;
+        }
+        #bar2 {
+            height: 60%;
+            animation-name: barplot2;
+        }
+        #bar3 {
+            height: 70%;
+            animation-name: barplot3;
+        }
+        @keyframes barplot1 {
+            0% { height: 100%; background-color: rgb(255, 255, 255); }
+            100% { height: 50%; background-color: rgb(255, 255, 255); }
+        }
+        @keyframes barplot2 {
+            0% { height: 100%; background-color: rgb(255, 255, 255); }
+            100% { height: 60%; background-color: rgb(255, 255, 255) }
+        }
+        @keyframes barplot3 {
+            0% { height: 100%; background-color: rgb(255, 255, 255) }
+            100% { height: 70%; background-color: rgb(255, 255, 255); }
+        }
+        h1 {
+            text-align: center;
+        }
+        .labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end; /* Align labels at the bottom */
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .labels span {
+            transform: rotate(-45deg); /* Rotate labels */
+            transform-origin: bottom center; /* Set the rotation origin */
+        }
+    </style>
+</head>
+<body>
+    <section id="Bar_graph">
+        <article>
+            <div>
+                <article id="bar1"> 30%</article>
+            </div>
+            <p>SST</p>
+        </article>
+        
+        <article>
+            <div>
+                <article id="bar2"> 40 %</article>
+            </div>
+            <p>Maths</p>
+        </article>
+
+        <article>
+            <div>
+                <article id="bar3"> 50%</article>
+            </div>
+            <p>Science</p>
+        </article>
+        <h1>No of Attempts</h1>
+        </div>
+    </section>
+</body>
+</html>
